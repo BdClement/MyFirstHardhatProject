@@ -1,0 +1,76 @@
+UTILISATIN HARDHAT
+
+	INSTALLATION Node.js
+
+	INITIALISATION projet Node.js
+
+		npm init -y // creation fichier package.json
+
+		npm install --save-dev hardhat // Installe Harhat en tant que dependance d developpement du projet
+		// Ajoute hardhat en tant que dependance dans le fichier package.json du projet Node.js
+
+	INITIALISATION projet Harhat
+
+		npx hardhat
+
+		Creation manuelle des dossier contracts scripts et tests
+
+		//Compilation du projet Hardhat (compilation des fichiers solidity present sur le projet)
+		npx hardhat compile
+		//Recompiler
+		npx hardhat clean && npx hardhat compile
+
+	MISE A JOUR DE LA VERSION Node.js
+		Node Version Manager est un outil pour gerer plusieurs version de Node.js sur une machine.
+		Possibilite d'installer, changer de version, definir une version par defaut etc..
+
+		Recuperation depuis Github du script d'installation de NVM puis execution du script dans bash
+		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+		Charge NVM dans la session actuelle
+		source ~/.nvm/nvm.sh
+
+		Installation de la version voulu de Node.js via NVM
+		nvm install 20
+
+		Utilisation de cette version dans le temrinal en cours
+		nvm use 20
+
+		Definition de cette version par defaut pour tout les terminaux
+		nvm alias default 20
+
+		Check de la version de Node.js utilise
+		node -v
+
+	LES TESTS outils puissant propose par Hardhat
+	Besoin d'utiliser la bibliotheque Javascript Ether.js (plus moderne et mieux documente que Web3.js)
+
+		Ether.js installe dans node_modules
+
+	INSTALLATION D'UN PLUGIN (frequent pour Hardhat)
+		npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+
+TEST DU CONTRAT SUR LE RESEAU LOCAL
+		npx hardhat test (voir fichier de test)
+
+DEPLOIMENT DU CONTRAT SUR LE RESEAU LOCAL HARDHAT (utilisation de Hardhat ignition)
+		npx hardhat node
+		Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+
+Ignition est un outil permettant de déployer des contrats intelligents de manière orchestrée et modulaire.
+Cet outil a pour objectif de simplifier et structurer le déploiement des contrats, en offrant un moyen de définir le processus de déploiement par étapes.
+Un module Ignition est un conteneur logique pour un ensemble d’actions de déploiement et de configuration.
+Ces modules permettent de décomposer le déploiement de plusieurs contrats en étapes distinctes, facilitant la gestion et la lisibilité du processus.
+
+Chaque module peut inclure :
+	-La configuraiton des contrat (code source, parametre de construction, argument du constructeur)
+	-La sequence de depoloiement (l'ordre dans lequel les contrats sont deployes)
+	-Les dependances (pour eviter qu'un module ne soit deployer sans qu'une dependance ne l'ait ete auparavant)
+
+Pour cela il faut installe hardhat-ignition:
+		npm install @nomicfoundation/hardhat-ignition
+	Ajout de require("@nomicfoundation/hardhat-ignition"); dans la config
+		npm hardhat ignition deploy ignition/modules/TournamentStore.js --network hardhat
+
+
+INTEGRATION DE LA FONCTIONNALITE BLOCKCHAIN DANS LE BACK-END DJANGO

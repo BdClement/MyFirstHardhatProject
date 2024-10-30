@@ -1,0 +1,21 @@
+.exit
+exit
+await instance.getTournamentScore(1);
+const proprio = await instance.getOwner();
+const instance = await TournamentStoreContract.attach(contractAddress);
+const TournamentStoreContract = await ethers.getContractFactory("TournamentStore");
+const TournamentStoreModule = await ethers.getContractFactory("TournamentStoreModule");
+const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contract address = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+console.log(`Le solde de l'adresse ${address} : ${ethers.utiils.formatEther(balance)} ETH`);
+console.log(`Le solde de l'adresse ${address} : ${balance1} ETH`);
+const balance1 = await ethers.provider.getBalance(address);
+const address = await signers[0].getAddress();
+const signers = await ethers.getSigners();
+const balance = await owner.getBalance();
+const [owner] = await ethers.getSigners();
+const [owner] = await ethers.getSigners()
+const [owner] = await ethers.getSigner(1)
+const [owner1] = await ethers.getSigners();
+const [owner] = await ethers.getSigners();
+const [owner] = await ethers.getSigner(0)
