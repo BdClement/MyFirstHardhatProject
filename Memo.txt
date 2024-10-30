@@ -52,6 +52,8 @@ UTILISATIN HARDHAT
 
 TEST DU CONTRAT SUR LE RESEAU LOCAL
 		npx hardhat test (voir fichier de test)
+		A noter : Le reseau local hardhat n'est utilise que pour les test unitaires et se reinitialise a chaque fois
+		Pour tester un contrat dans un contexte persistant sur un reseau local, il faut configurer un reseau local externe (localhost)
 
 DEPLOIMENT DU CONTRAT SUR LE RESEAU LOCAL HARDHAT (utilisation de Hardhat ignition)
 		npx hardhat node
@@ -70,7 +72,9 @@ Chaque module peut inclure :
 Pour cela il faut installe hardhat-ignition:
 		npm install @nomicfoundation/hardhat-ignition
 	Ajout de require("@nomicfoundation/hardhat-ignition"); dans la config
-		npm hardhat ignition deploy ignition/modules/TournamentStore.js --network hardhat
+		npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network hardhat
 
 
 INTEGRATION DE LA FONCTIONNALITE BLOCKCHAIN DANS LE BACK-END DJANGO
+ npx hardhat console --network localhost (pour aller sur une console du reseau local)
+ npx hardhat run scripts/checkBalance.cjs --network localhost (lancer un script pour tester)

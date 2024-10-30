@@ -1,21 +1,15 @@
+ console.log("Solde du proprietaire :", balance, " ETH");
+const balance =  await provider.getBalance(ownerAddress);
+const ownerAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
+const provider = new ethers.JsonRpcProvider("http://localhost:8545");
 .exit
-exit
-await instance.getTournamentScore(1);
-const proprio = await instance.getOwner();
-const instance = await TournamentStoreContract.attach(contractAddress);
-const TournamentStoreContract = await ethers.getContractFactory("TournamentStore");
-const TournamentStoreModule = await ethers.getContractFactory("TournamentStoreModule");
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-const contract address = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-console.log(`Le solde de l'adresse ${address} : ${ethers.utiils.formatEther(balance)} ETH`);
-console.log(`Le solde de l'adresse ${address} : ${balance1} ETH`);
-const balance1 = await ethers.provider.getBalance(address);
-const address = await signers[0].getAddress();
-const signers = await ethers.getSigners();
-const balance = await owner.getBalance();
-const [owner] = await ethers.getSigners();
-const [owner] = await ethers.getSigners()
-const [owner] = await ethers.getSigner(1)
-const [owner1] = await ethers.getSigners();
-const [owner] = await ethers.getSigners();
-const [owner] = await ethers.getSigner(0)
+ console.log("Solde du proprietaire :", balance, " ETH");
+const balance =  await provider.getBalance(ownerAddress);
+ console.log("Solde du proprietaire :", balance, " ETH");
+const ownerAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
+const provider = new ethers.JsonRpcProvider("http://localhost:8545");
+console.log("Solde du proprietaire :", balance, " ETH");
+const balance =  await provider.getBalance(ownerAddress);
+const provider = new ethers.JsonRpcProvider("http://localhost:8545");
+const ownerAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266";
+const contract = await ethers.getContractAt("TournamentStore", "0x5FbDB2315678afecb367f032d93F642f64180aa3");

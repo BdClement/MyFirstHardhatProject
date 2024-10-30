@@ -6,6 +6,17 @@ require("@nomicfoundation/hardhat-ignition");
 //dotenv pour recuperer des variables depuis un .env pour cacher els private_KEY
 
 module.exports = {
+  defaultNetwork: "hardhat",
+  networks: {
+    hardhat: {
+    },
+    localhost : {
+      url : 'http://127.0.0.1:8545',
+      chainId: 31337
+      // accounts : ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"]
+    },
+    //Autre reseau a definir
+  },
   solidity: "0.8.27",
   //Declaration d'objet network a utiliser Alchemy
   //Local network hardhat par defaut localhost:8545
