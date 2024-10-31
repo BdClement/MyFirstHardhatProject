@@ -135,3 +135,5 @@ async function main() {
 }
 
 main();
+// Faire la connexion entre mon back-end et le smart contrat sur le reseau localhost !
+// Faire la meme chose sur un reseau de test ETH

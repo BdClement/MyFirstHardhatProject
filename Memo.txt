@@ -78,3 +78,4 @@ Pour cela il faut installe hardhat-ignition:
 INTEGRATION DE LA FONCTIONNALITE BLOCKCHAIN DANS LE BACK-END DJANGO
  npx hardhat console --network localhost (pour aller sur une console du reseau local)
  npx hardhat run scripts/checkBalance.cjs --network localhost (lancer un script pour tester)
+
