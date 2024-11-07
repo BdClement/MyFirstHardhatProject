@@ -1,16 +1,16 @@
 
 # MyFrirstHardhatProject
 
-MyFrirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum tesnet. 
+MyFrirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum testnet. 
 
 (I used hardhat network as well to firt deploy it on hardhat local blockhain)
 
 ## 📋 Table des matières
-- [Environnement](#environnement)
-- [Installation](#-installation)
+- [Environment](#environnement)
+- [Install](#-installation)
 - [Compilation](#-compilation)
 - [Tests](#-tests)
-- [Déploiement](#-déploiement)
+- [Deployment](#-déploiement)
 - [Licence](#-licence)
 
 ---
@@ -63,4 +63,5 @@ npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network sepol
 
 ### A Faire 
 - Retier cache, artifacts, nodes_modules
+ 
  
