@@ -4,7 +4,7 @@ MyFrirstHardhatProject aims to create, test and deploy a smart contract on Sepol
 
 (I used hardhat network as well to firt deploy it on hardhat local blockhain)
 
-## 📋 Table des matières
+## 📋 Table of contents
 - [Environment](#environment)
 - [Install](#-install)
 - [Compilation](#-compilation)
