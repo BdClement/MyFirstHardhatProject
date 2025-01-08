@@ -30,9 +30,9 @@ This project uses environment variables to store sensitive informations. Those i
     NETWORK_URL=your_network_url
 ```
 
-ALCHEMY_API_KEY : API Key to connect to the Ethereum network via ALCHEMY.
-PRIVATE_KEY : Private Key to sign and deploy the smart contract.
-NETWORK_URL : Ethereum network RPC URL (ex. : Sepolia via Alchemy).
+ALCHEMY_API_KEY : API Key to connect to the Ethereum network via ALCHEMY.  
+PRIVATE_KEY : Private Key to sign and deploy the smart contract.  
+NETWORK_URL : Ethereum network RPC URL (ex. : Sepolia via Alchemy).  
 
 ## 📦 Install
 ```bash
