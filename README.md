@@ -52,7 +52,9 @@ npm install --save-dev hardhat
 ```
 
 
-I initialized hardhat by using npx which is a tool included with npm to allows running npm packages without installing them globally. For example, running npx hardhat executes the Hardhat command without needing to install it globally on the system. This ensures we are using the version of Hardhat specified in the project (in Node.js dependencies), keeping the environment clean and consistent.
+I initialized hardhat by using npx which is a tool included with npm to allows running npm packages without installing them globally.  
+For example, running npx hardhat executes the Hardhat command without needing to install it globally on the system.  
+This ensures we are using the version of Hardhat specified in the project (in Node.js dependencies), keeping the environment clean and consistent.
 
 ```bash
 npx hardhat
@@ -61,8 +63,7 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 
 ## 🛠 Compilation
 
-I have written my Solidity's smart contracts and store it in a contracts folder. 
-
+I have written my Solidity's smart contracts and store it in a contracts folder.  
 Hardhat compile the contracts.
 
 ```bash
@@ -80,10 +81,8 @@ npx hardhat test
 
 ## 🔧 Deployment
 
-I choose to use Hardhat Ignition to deploy my contracts which has been installed with hardhat-toolbox.
-
-It works by providing a modular deployment system, allowing to organize and reuse deployment steps across multiple contracts and networks, offering greater flexibility and maintainability compared to a simple script.
-
+I choose to use Hardhat Ignition to deploy my contracts which has been installed with hardhat-toolbox.  
+It works by providing a modular deployment system, allowing to organize and reuse deployment steps across multiple contracts and networks, offering greater flexibility and maintainability compared to a simple script.  
 Ignition's advantage hasn't really helpfull in this context but I wanted to use it for the first time and explore it.
 
 ```bash
