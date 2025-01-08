@@ -12,7 +12,7 @@ MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepoli
 - [Tests](#-tests)
 - [Deployment](#-deployment)
 - [Licence](#-licence)
-- [Documentation](#-documentation)
+- [Documentation](#documentation)
 
 ---
 
