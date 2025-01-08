@@ -64,7 +64,7 @@ npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network sepol
 ![License](https://img.shields.io/badge/license-MIT-green)
 
  
-##  Documentation
+## Documentation
 
 [How to deploy a smart contract](https://docs.alchemy.com/docs/how-to-deploy-a-smart-contract-to-the-sepolia-testnet)
 
