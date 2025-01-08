@@ -5,14 +5,14 @@ MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepoli
 
 (I used hardhat network as well to first deploy it on hardhat local blockhain)
 
-## 📋 Table des matières
+## 📋 Contents
 - [Environment](#-environment)
 - [Install](#-install)
 - [Compilation](#-compilation)
 - [Tests](#-tests)
 - [Deployment](#-deployment)
 - [Licence](#-licence)
-- [Documentation](#documentation)
+- [Documentation](#-documentation)
 
 ---
 
@@ -64,7 +64,7 @@ npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network sepol
 ![License](https://img.shields.io/badge/license-MIT-green)
 
  
-## Documentation
+##  Documentation
 
 [How to deploy a smart contract](https://docs.alchemy.com/docs/how-to-deploy-a-smart-contract-to-the-sepolia-testnet)
 
