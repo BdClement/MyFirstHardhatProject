@@ -6,12 +6,12 @@ MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepoli
 (I used hardhat network as well to first deploy it on hardhat local blockhain)
 
 ## 📋 Table des matières
-- [Environment](#environment)
-- [Install](#install)
-- [Compilation](#compilation)
-- [Tests](#tests)
-- [Deployment](#deployment)
-- [Licence](#licence)
+- [Environment](#-environment)
+- [Install](#-install)
+- [Compilation](#-compilation)
+- [Tests](#-tests)
+- [Deployment](#-deployment)
+- [Licence](#-licence)
 - [Documentation](#documentation)
 
 ---
