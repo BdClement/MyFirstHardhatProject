@@ -1,10 +1,8 @@
 
 # MyFirstHardhatProject
 
-MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum testnet. 
-
-(I used hardhat's local network as well to first deploy it on hardhat local blockhain)
-
+MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum testnet.  
+(I used hardhat's local network as well to first deploy it on hardhat local blockhain)  
 Hardhat is a Node.js framework that simplifies the process of developing, testing, and deploying smart contracts on Ethereum blockchain.
 
 ## 📋 Contents
