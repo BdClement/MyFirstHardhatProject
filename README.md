@@ -2,7 +2,9 @@
 # MyFirstHardhatProject
 
 MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum testnet. 
+
 (I used hardhat's local network as well to first deploy it on hardhat local blockhain)
+
 Hardhat is a Node.js framework that simplifies the process of developing, testing, and deploying smart contracts on Ethereum blockchain.
 
 ## 📋 Contents
@@ -35,7 +37,9 @@ PRIVATE_KEY : Private Key to sign and deploy the smart contract.
 NETWORK_URL : Ethereum network RPC URL (ex. : Sepolia via Alchemy).
 
 ## 📦 Install
+```bash
 git clone https://github.com/BdClement/MyFirstHardhatProject.git
+```
 
 cd MyFrirstHardhatProject
 
@@ -58,6 +62,7 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 ## 🛠 Compilation
 
 I have written my Solidity's smart contracts and store it in a contracts folder. 
+
 Hardhat compile the contracts.
 
 npx hardhat compile
@@ -72,7 +77,10 @@ npx hardhat test
 ## 🔧 Deployment
 
 I choose to use Hardhat Ignition to deploy my contracts which has been installed with hardhat-toolbox.
-It works by providing a modular deployment system, allowing to organize and reuse deployment steps across multiple contracts and networks, offering greater flexibility and maintainability compared to a simple script. Ignition's advantage hasn't really helpfull in this context but I wanted to use it for the first time and explore it.
+
+It works by providing a modular deployment system, allowing to organize and reuse deployment steps across multiple contracts and networks, offering greater flexibility and maintainability compared to a simple script.
+
+Ignition's advantage hasn't really helpfull in this context but I wanted to use it for the first time and explore it.
 
 npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network sepolia
 
