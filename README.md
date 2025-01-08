@@ -2,8 +2,8 @@
 # MyFirstHardhatProject
 
 MyFirstHardhatProject aims to create, test and deploy a smart contract on Sepolia Ethereum testnet. 
-
-(I used hardhat network as well to first deploy it on hardhat local blockhain)
+(I used hardhat's local network as well to first deploy it on hardhat local blockhain)
+Hardhat is a Node.js framework that simplifies the process of developing, testing, and deploying smart contracts on Ethereum blockchain.
 
 ## 📋 Contents
 - [Environment](#-environment)
@@ -39,22 +39,40 @@ git clone https://github.com/BdClement/MyFirstHardhatProject.git
 
 cd MyFrirstHardhatProject
 
-Make sure you have installed [Node.js](https://nodejs.org/) 
+As Hardhat operates within the Node.js environment, I had to install it with Hadhat as dependency thanks to npm (Node Package Manager a tool used to manage dependencies in a Node.js project as framework, pluggins..)
 
+Make sure you have installed [Node.js](https://nodejs.org/) 
 Recommended version  : ![Node Version](https://img.shields.io/badge/node-20.x-green)
 
 npm install
+npm init -y
+npm install --save-dev hardhat
+
+
+I initialized hardhat by using npx which is a tool included with npm to allows running npm packages without installing them globally. For example, running npx hardhat executes the Hardhat command without needing to install it globally on the system. This ensures we are using the version of Hardhat specified in the project (in Node.js dependencies), keeping the environment clean and consistent.
+
+npx hardhat
+
+npm install --save-dev @nomicfoundation/hardhat-toolbox
 
 ## 🛠 Compilation
 
-npx hardhat compile
+I have written my Solidity's smart contracts and store it in a contracts folder. 
+Hardhat compile the contracts.
 
+npx hardhat compile
+npx hardhat clean && npx hardhat compile 
 
 ## 🧪 Tests
+
+Hardhat has a testing functionality. It integrates with Mocha for structuring tests and Chai for assertions, providing an environment to simulate transactions and interactions with contracts on a local Ethereum network.
 
 npx hardhat test
 
 ## 🔧 Deployment
+
+I choose to use Hardhat Ignition to deploy my contracts which has been installed with hardhat-toolbox.
+It works by providing a modular deployment system, allowing to organize and reuse deployment steps across multiple contracts and networks, offering greater flexibility and maintainability compared to a simple script. Ignition's advantage hasn't really helpfull in this context but I wanted to use it for the first time and explore it.
 
 npx hardhat ignition deploy ignition/modules/TournamentStore.cjs --network sepolia
 
